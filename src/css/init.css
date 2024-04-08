@@ -1,0 +1,32 @@
+* { margin: 0; padding: 0; }
+ul { list-style: none; }
+html, body { box-sizing: border-box; }
+
+:root {
+  --background-color: #e3e0c6;
+  --text-color: #33322c;
+
+  --clock-face-background-color: white;
+  --clock-face-border-color: black;
+  --clock-face-steps-color: black;
+  --clock-hand-hours-color: black;
+  --clock-hand-minutes-color: #555;
+  --clock-hand-seconds-color: red;
+
+  --slider-background-color: var(--text-color);
+  --thumb-color-off: #666;
+  --thumb-color-on: var(--background-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #33322c;
+    --text-color: #e3e0c6;
+
+    /* clock colors are the same in light and dark mode */
+
+    --slider-background-color: black;
+    --thumb-color-off: var(--background-color);
+    --thumb-color-on: var(--text-color);
+  }
+}

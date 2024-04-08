@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- for Google -->
+  <meta name="description" content="Silly Clock" />
+  <meta name="keywords" content="clock,html,css,svg,javascript" />
+
+  <meta name="author" content="Simen Lysebo" />
+  <meta name="copyright" content="" />
+
+  <!-- for Facebook -->          
+  <meta property="og:title" content="Silly Clock" />
+  <meta property="og:type" content="clock" />
+  <meta property="og:image" content="https://lysebo.xyz/misc/silly-clock/share/silly.png" />
+  <meta property="og:url" content="https://lysebo.xyz/misc/silly-clock" />
+  <meta property="og:description" content="A silly clock created by Simen Lysebo." />
+
+  <title>Silly Clock</title>
+  <style class="onetime">/* one-time generated css */</style>
+  <style class="runtime">/* runtime generated css */</style>
+  <link rel="stylesheet" href="css/main.css" />
+  <script type="module" src="js/main.js"></script>
+  <script>
+    /* declare a variable to prevent Flash of Unstyled Content in Firefox */
+    let ff_fouc_fix;
+  </script>
+</head>
+<body>
+  <section class="clock">
+    <div class="hand hours"><span></span><span></span><span></span></div>
+    <div class="hand minutes"><span></span><span></span><span></span><span></span></div>
+    <div class="hand seconds"><span></span><span></span><span></span><span></span><span></span></div>
+  </section>
+  <section class="mode">
+    <label>
+      normal
+      <input type="checkbox" /><span></span>
+      silly
+    </label>
+  </section>
+</body>
+</html>
