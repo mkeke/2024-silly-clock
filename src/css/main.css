@@ -41,7 +41,7 @@ section.mode {
       height: 100%;
       width: 100%;
       background-color: var(--slider-background-color);
-      border-radius: 4vw;
+      border-radius: 25% / 50%; /* circular rounded corners according to aspect ratio */
     }
 
     &:after {
